@@ -1,17 +1,102 @@
-/* header */
-header h2{
-    margin-left: 9%;
-}
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
 /* common styles or utilities */
+
+body{
+    font-family: 'Oswald', sans-serif;
+    margin: 0;
+}
+
+/* header */
+
+header h2{
+    margin-left: 5%;
+}
+
+/* main section */
+
 main{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 0 5%;
 }
+
 /* first section */
-section{
+
+.top-section{
     display: flex;
+    justify-content: space-between;
+    width: 100%;
 }
 h1{
     font-size: 3em;
+}
+.prebook-button{
+    text-decoration: none;
+    padding: 10px 30px;
+    background-color: #FD3165;
+    color: white;
+    border-radius: 20px;
+}
+#top-image:hover{
+    transform: scale(1.2);
+    transition: transform 1s ease;
+}
+hr{
+    width: 100%;
+    margin: 50px;
+}
+
+/* second section */
+
+.section-name{
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.products{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+}
+.product{
+    box-shadow: 2px 2px 20px 2px gainsboro;
+    padding: 10px;
+}
+.product h3{
+    font-size: 24px;
+}
+.fa-star{
+    font-size: 16px;
+    color: orange;
+}
+.popular-section a{
+    text-decoration: none;
+    color: #FD3165;
+    float: right;
+}
+
+/* review section */
+
+.reviews{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 150px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+/* footer section */
+
+footer{
+    background-color: #02194b;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+.fab{
+    color: white;
+    margin: 0 10px;
 }
